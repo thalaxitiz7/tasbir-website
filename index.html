@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasbir — Discover, Download & Create</title>
+  <meta name="description" content="Tasbir is a modern image platform designed to help people discover, save, upload, and download visual content with ease.">
+  <meta name="theme-color" content="#080808">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="YOUR_WEBSITE_URL">
+  <meta property="og:title" content="Tasbir — Discover, Download & Create">
+  <meta property="og:description" content="A simpler place to find visual content worth saving. Discover, upload, and download with Tasbir.">
+  <meta property="og:image" content="assets/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Google Fonts: Fraunces & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Early Theme Initialization (Prevents Light/Dark Flash) -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('tasbir_theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- Dynamic Background Ambient Glow -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Header / Navigation -->
+  <header class="navbar-header" id="navbar">
+    <div class="container navbar-container">
+      <a href="#hero" class="brand-logo" aria-label="Tasbir Home">
+        <img src="tasbir-logo.png" alt="Tasbir Logo" class="logo-img" width="130" height="36">
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#app" class="nav-link">App Showcase</a></li>
+          <li><a href="#support" class="nav-link">Support</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle light and dark mode" type="button">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <a href="#" class="btn btn-primary js-playstore-btn">Get Tasbir</a>
+
+        <button class="hamburger-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" type="button">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-badge">Modern Visual Platform</div>
+          <h1 class="hero-title">Discover. Download. Create with Tasbir.</h1>
+          <p class="hero-description">
+            Tasbir is a modern image platform designed to help people discover, save, download, and share beautiful visual content with ease.
+          </p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary btn-large js-playstore-btn">Get Tasbir</a>
+            <a href="#app" class="btn btn-secondary btn-large">Explore Tasbir</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal visual-delay">
+          <div class="hero-composition">
+            <div class="phone-frame hero-phone-secondary left">
+              <div class="phone-screen">
+                <img src="02.png" alt="Tasbir Interface Explore Screen" loading="eager" decoding="async">
+              </div>
+            </div>
+            <div class="phone-frame hero-phone-main">
+              <div class="phone-screen">
+                <img src="01.png" alt="Tasbir Interface Primary Screen" loading="eager" decoding="async">
+              </div>
+            </div>
+            <div class="phone-frame hero-phone-secondary right">
+              <div class="phone-screen">
+                <img src="03.png" alt="Tasbir Interface Save Screen" loading="eager" decoding="async">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Accent Divider -->
+    <div class="divider-container container"><hr class="gold-divider"></div>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-header reveal">
+            <span class="section-tag font-editorial">Editorial Vision</span>
+            <h2 class="section-title">A simpler way to discover visual inspiration.</h2>
+          </div>
+          <div class="about-content reveal">
+            <p class="lead-text">
+              Tasbir removes the complexity from visual discovery. Designed for creators, curators, and visual enthusiasts, the platform provides a clean space to find, save, and contribute images without friction.
+            </p>
+            <p class="body-text">
+              Whether you are organizing a project composition, archiving visual reference material, or sharing your own photographic work with the community, Tasbir keeps the experience minimal, elegant, and efficient.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-value font-editorial">9:16</span>
+                <span class="stat-label">Mobile Optimized Frame</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value font-editorial">0.0s</span>
+                <span class="stat-label">Zero Interface Lag</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value font-editorial">100%</span>
+                <span class="stat-label">Focused Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag font-editorial">Platform Capabilities</span>
+          <h2 class="section-title">Built for Effortless Discovery</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            </div>
+            <h3 class="feature-title">Discover</h3>
+            <p class="feature-desc">Explore curated images and find visual inspiration quickly through seamless categorization.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </div>
+            <h3 class="feature-title">Download</h3>
+            <p class="feature-desc">Download high-quality imagery directly for permitted personal or creative reference work.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+            </div>
+            <h3 class="feature-title">Save</h3>
+            <p class="feature-desc">Keep useful imagery organized in personal collections for immediate access anytime.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+            </div>
+            <h3 class="feature-title">Upload</h3>
+            <p class="feature-desc">Contribute your own high-resolution visual work into the growing Tasbir ecosystem.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+            </div>
+            <h3 class="feature-title">Explore</h3>
+            <p class="feature-desc">Browse through wide-ranging visual collections updated constantly by creators.</p>
+          </div>
+
+          <div class="feature-card reveal">
+            <div class="feature-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <h3 class="feature-title">Simple Experience</h3>
+            <p class="feature-desc">A minimal, intuitive user interface designed to prioritize image visibility over clutter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How Tasbir Works Section -->
+    <section class="how-section" id="how">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag font-editorial">Workflow</span>
+          <h2 class="section-title">How Tasbir Works</h2>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-item reveal">
+            <span class="step-number font-editorial">01</span>
+            <h3 class="step-title">Discover</h3>
+            <p class="step-desc">Find visual content aligned with your creative taste or specific project needs.</p>
+          </div>
+
+          <div class="step-item reveal">
+            <span class="step-number font-editorial">02</span>
+            <h3 class="step-title">Save or Download</h3>
+            <p class="step-desc">Keep items neatly categorized in your library or download files for immediate use.</p>
+          </div>
+
+          <div class="step-item reveal">
+            <span class="step-number font-editorial">03</span>
+            <h3 class="step-title">Create & Share</h3>
+            <p class="step-desc">Upload your original photography and share your vision with a community of enthusiasts.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Presentation Showcase Section -->
+    <section class="app-section" id="app">
+      <div class="container">
+        <div class="app-section-header reveal">
+          <div>
+            <span class="section-tag font-editorial">Interface Preview</span>
+            <h2 class="section-title">Experience the Interface</h2>
+          </div>
+          <div class="carousel-controls">
+            <button id="carouselPrev" class="carousel-btn" aria-label="Previous screenshot" type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button id="carouselNext" class="carousel-btn" aria-label="Next screenshot" type="button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Full-Width Horizontal Scroll Showcase -->
+      <div class="app-carousel-track" id="appCarousel" tabindex="0" role="region" aria-label="App Screenshots Carousel">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+    </section>
+
+    <!-- Download CTA Section -->
+    <section class="cta-section" id="download">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-content">
+            <h2 class="cta-title">Your next image is waiting.</h2>
+            <p class="cta-desc">Bring Tasbir with you and discover a simpler way to explore visual content.</p>
+            <div class="cta-actions">
+              <a href="#" class="btn btn-primary btn-large js-playstore-btn">Get Tasbir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Support Section -->
+    <section class="support-section" id="support">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="section-tag font-editorial">Assistance</span>
+          <h2 class="section-title">Need help? We're here.</h2>
+        </div>
+
+        <div class="support-grid">
+          <div class="support-card reveal">
+            <h3 class="support-card-title">Customer Support</h3>
+            <p class="support-card-text">For account access, application troubleshooting, downloads, or general guidance.</p>
+            <a href="mailto:support.tasbir@gmail.com" class="support-link js-support-email">support.tasbir@gmail.com</a>
+          </div>
+
+          <div class="support-card reveal">
+            <h3 class="support-card-title">Business & Advertising</h3>
+            <p class="support-card-text">For advertising opportunities, sponsorships, and commercial inquiries.</p>
+            <a href="mailto:business.tasbir@gmail.com" class="support-link js-business-email">ads.tasbir@gmail.com</a>
+          </div>
+
+          <div class="support-card reveal">
+            <h3 class="support-card-title">Report an Issue</h3>
+            <p class="support-card-text">To notify us about technical errors, platform misuse, or content policy items.</p>
+            <a href="#contact" class="support-link">Submit a Report &rarr;</a>
+          </div>
+
+          <div class="support-card reveal">
+            <h3 class="support-card-title">Partnership</h3>
+            <p class="support-card-text">For creative collaborations, institutional accounts, and media initiatives.</p>
+            <a href="#contact" class="support-link">Partner With Us &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="section-tag font-editorial">Get in Touch</span>
+            <h2 class="section-title">Send us a message</h2>
+            <p class="body-text">
+              Have questions or feedback? Fill out the form and our team will get back to you promptly.
+            </p>
+          </div>
+
+          <div class="contact-form-wrapper reveal">
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contactName" class="form-label">Name</label>
+                <input type="text" id="contactName" name="name" class="form-input" placeholder="Your full name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email</label>
+                <input type="email" id="contactEmail" name="email" class="form-input" placeholder="your.email@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="inquiryType" class="form-label">Inquiry Type</label>
+                <select id="inquiryType" name="inquiryType" class="form-input" required>
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="Customer Support">Customer Support</option>
+                  <option value="Advertising Inquiry">Advertising Inquiry</option>
+                  <option value="Partnership">Partnership</option>
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Report an Issue">Report an Issue</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea id="contactMessage" name="message" class="form-input form-textarea" rows="4" placeholder="How can we help?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">Send Inquiry</button>
+              <div id="formStatus" class="form-status-message" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Legal Section & Navigation -->
+  <section class="legal-nav-section">
+    <div class="container">
+      <div class="legal-nav-wrapper">
+        <span class="legal-nav-title font-editorial">Legal & Policies</span>
+        <ul class="legal-nav-list">
+          <li><a href="legal/terms.html">Terms & Conditions</a></li>
+          <li><a href="legal/privacy.html">Privacy Policy</a></li>
+          <li><a href="legal/license.html">License Agreement</a></li>
+          <li><a href="legal/uploader-agreement.html">Uploader Agreement</a></li>
+          <li><a href="legal/downloader-agreement.html">Downloader Agreement</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/tasbir-logo.png" alt="Tasbir Logo" class="footer-logo" width="120" height="34">
+          <p class="footer-desc">A modern image platform to discover, save, download, and share visual content with clarity.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#app">App Showcase</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Support & Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#support">Help Center</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+             <li><a href="agreement.html">license agreement</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="#" class="js-instagram-url" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="#" class="js-facebook-url" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="#" class="js-x-url" target="_blank" rel="noopener">X (Twitter)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 Tasbir. All rights reserved.</p>
+        <p class="legal-disclaimer">Explore and use visual content according to applicable Tasbir licenses and platform terms.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Scroll back to top" type="button">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

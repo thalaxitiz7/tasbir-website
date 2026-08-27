@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploader Copyright Assignment & Content Agreement - Tasbir</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --card-bg: #121212;
+            --card-border: #1f1f1f;
+            --accent-yellow: #f5ab00;
+            --text-white: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 8%;
+            border-bottom: 1px solid var(--card-border);
+            background-color: var(--bg-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--accent-yellow);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--text-white);
+        }
+
+        .btn-yellow {
+            background-color: var(--accent-yellow);
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .btn-yellow:hover {
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 0 24px;
+        }
+
+        /* Back Button */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            transition: all 0.2s ease;
+        }
+
+        .btn-back:hover {
+            color: var(--accent-yellow);
+            border-color: var(--accent-yellow);
+        }
+
+        /* Page Title Header */
+        .hero {
+            margin-bottom: 48px;
+        }
+
+        .badge {
+            display: inline-block;
+            border: 1px solid var(--card-border);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--accent-yellow);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .intro-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+            color: var(--text-white);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Grid Layout for Policy Items */
+        .terms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .terms-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .terms-card:hover {
+            border-color: rgba(245, 171, 0, 0.4);
+        }
+
+        .terms-card h2 {
+            color: var(--accent-yellow);
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .terms-card h3 {
+            color: var(--accent-yellow);
+            font-size: 15px;
+            font-weight: 600;
+            margin-top: 12px;
+            margin-bottom: 4px;
+        }
+
+        .terms-card p {
+            color: var(--text-white);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .terms-card ul {
+            list-style-position: inside;
+            color: var(--text-white);
+            font-size: 14px;
+            margin-bottom: 8px;
+            padding-left: 8px;
+        }
+
+        .terms-card li {
+            margin-bottom: 4px;
+        }
+
+        .terms-card p:last-child, .terms-card ul:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+            padding: 24px;
+            border-top: 1px solid var(--card-border);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .terms-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Tasbir</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">App Showcase</a>
+            <a href="#">Support</a>
+            <a href="#">Contact</a>
+            <a href="#" class="btn-yellow">Get Tasbir</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Back Button -->
+        <a href="index.html" class="btn-back">
+            &#8592; Back to Home
+        </a>
+
+        <section class="hero">
+            <span class="badge">Legal & Rights</span>
+            <h1>Uploader Copyright Assignment & Content Agreement</h1>
+            <p>Effective Date: 8 August 2026</p>
+        </section>
+
+        <div class="intro-box">
+            <p>This Tasbir Uploader Copyright Assignment & Content Agreement (“Agreement”) governs the submission, upload, transfer, assignment, licensing, management, distribution, and commercial exploitation of images and other visual Content submitted to Tasbir.</p>
+            <br>
+            <p>This Agreement is between <strong>Tasbir</strong> (“Tasbir,” “we,” “us,” or “our”) and the individual or legal entity submitting Content (“Uploader,” “you,” or “your”).</p>
+            <br>
+            <p>By creating an account, selecting “I Agree,” uploading Content, submitting Content for publication, or otherwise providing Content to Tasbir, you acknowledge that you have read, understood, and accepted this Agreement. If you do not agree to this Agreement, you must not upload or submit Content to Tasbir.</p>
+        </div>
+
+        <section class="terms-grid">
+            <article class="terms-card">
+                <h2>1. DEFINITIONS</h2>
+                <h3>1.1 “Content”</h3>
+                <p>Means any photograph, image, illustration, artwork, graphic, design, animation, video, visual material, digital file, or other material submitted, uploaded, or provided by the Uploader to Tasbir.</p>
+                <h3>1.2 “Accepted Content”</h3>
+                <p>Means Content that Tasbir has accepted, approved, published, stored, made available, or otherwise processed for use through the Tasbir Platform.</p>
+                <h3>1.3 “Uploader”</h3>
+                <p>Means the person or legal entity submitting Content to Tasbir.</p>
+                <h3>1.4 “Tasbir Platform”</h3>
+                <p>Means Tasbir's applications, websites, APIs, databases, storage systems, content-delivery systems, software, services, and related infrastructure.</p>
+                <h3>1.5 “User” or “Downloader”</h3>
+                <p>Means a person or entity accessing, downloading, purchasing, or otherwise obtaining Content through Tasbir.</p>
+                <h3>1.6 “License”</h3>
+                <p>Means the permission granted by Tasbir to a User to use Content under the applicable Tasbir Content License.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>2. PURPOSE OF THIS AGREEMENT</h2>
+                <p>Tasbir operates a digital Content platform through which Content may be:</p>
+                <ul>
+                    <li>uploaded</li>
+                    <li>reviewed</li>
+                    <li>stored</li>
+                    <li>displayed</li>
+                    <li>categorized</li>
+                    <li>searched</li>
+                    <li>downloaded</li>
+                    <li>purchased</li>
+                    <li>licensed</li>
+                    <li>sublicensed</li>
+                    <li>distributed</li>
+                    <li>modified</li>
+                    <li>incorporated into other works</li>
+                    <li>or otherwise commercially or non-commercially used.</li>
+                </ul>
+                <p>The purpose of this Agreement is to establish the ownership and rights of Tasbir over Content submitted by the Uploader and to establish the Uploader's responsibilities regarding that Content.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>3. COPYRIGHT ASSIGNMENT TO TASBIR</h2>
+                <h3>3.1 Assignment of Copyright</h3>
+                <p>Subject to applicable law and the terms of this Agreement, the Uploader hereby assigns, transfers, conveys, and grants to Tasbir all copyright and transferable intellectual-property rights that the Uploader legally owns in Accepted Content. This assignment is intended to transfer ownership of the applicable copyright in Accepted Content to Tasbir.</p>
+                <h3>3.2 Scope of Assignment</h3>
+                <p>The assignment includes, to the maximum extent legally transferable, the rights to reproduce, copy, publish, display, distribute, communicate to the public, make available online, sell, license, sublicense, authorize third parties to use, modify, adapt, crop, resize, edit, combine with other materials, create derivative works, create previews and thumbnails, include in collections, include in subscriptions, include in paid products, use for advertising and promotion of Tasbir, and otherwise commercially exploit the Content across all forms of use permitted by applicable law.</p>
+                <h3>3.3 Worldwide Rights</h3>
+                <p>The assignment applies worldwide to the extent permitted by applicable law. Tasbir may exercise the assigned rights itself or through affiliates, contractors, distributors, partners, licensees, sublicensees, customers, marketplaces, platforms, and other authorized third parties.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>4. TASBIR'S OWNERSHIP AFTER ACCEPTANCE</h2>
+                <p>Once Content becomes Accepted Content, Tasbir may treat the transferred copyright and other legally transferable rights as rights owned or controlled by Tasbir.</p>
+                <p>Tasbir may independently determine how the Content is displayed, categorized, priced, licensed, sold, distributed, promoted, modified, or removed.</p>
+                <p>The Uploader does not retain an ownership interest in the copyright rights that have been validly assigned to Tasbir.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>5. NO EXCLUSIVE CLAIM BY UPLOADER</h2>
+                <p>After the applicable rights have been transferred to Tasbir, the Uploader must not represent or claim that:</p>
+                <ul>
+                    <li>the Uploader remains the exclusive copyright owner of the Accepted Content;</li>
+                    <li>the Uploader has exclusive licensing rights;</li>
+                    <li>Tasbir cannot license the Content;</li>
+                    <li>Tasbir cannot sell the Content;</li>
+                    <li>Tasbir cannot modify the Content;</li>
+                    <li>or a User who receives a valid license from Tasbir has no right to use the Content.</li>
+                </ul>
+                <p>The Uploader must not enter into a later agreement that purports to grant another party rights inconsistent with the rights already assigned to Tasbir.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>6. UPLOADER'S ORIGINAL CREATION REQUIREMENT</h2>
+                <p>The Uploader represents that, unless expressly disclosed and authorized:</p>
+                <ul>
+                    <li>the Uploader created the Content;</li>
+                    <li>the Uploader owns the rights being assigned;</li>
+                    <li>the Content was not unlawfully copied;</li>
+                    <li>the Content was not stolen;</li>
+                    <li>and the Uploader has the legal authority to transfer the applicable rights to Tasbir.</li>
+                </ul>
+            </article>
+
+            <article class="terms-card">
+                <h2>7. THIRD-PARTY CONTENT</h2>
+                <p>The Uploader must not upload Content containing material owned by another person unless the Uploader has sufficient legal rights to include and transfer or license that material to Tasbir.</p>
+                <p>The Uploader is responsible for obtaining all necessary permissions before uploading Content that contains third-party protected material.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>8. PEOPLE, MODELS, AND LIKENESS</h2>
+                <p>If Content contains an identifiable person, the Uploader is responsible for obtaining any legally required consent, release, authorization, or permission necessary for the intended uses of the Content.</p>
+                <p>The Uploader must not upload Content where the use of an identifiable person's likeness would unlawfully violate that person's rights.</p>
+                <p>Where Tasbir requires a model release or similar documentation, the Uploader must provide it.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>9. PROPERTY AND LOCATION RIGHTS</h2>
+                <p>Where required by applicable law or by the intended commercial use, the Uploader must obtain appropriate permission or property releases relating to:</p>
+                <ul>
+                    <li>private property;</li>
+                    <li>buildings;</li>
+                    <li>artworks;</li>
+                    <li>locations;</li>
+                    <li>events;</li>
+                    <li>businesses;</li>
+                    <li>products;</li>
+                    <li>or other protected property.</li>
+                </ul>
+            </article>
+
+            <article class="terms-card">
+                <h2>10. TRADEMARKS AND LOGOS</h2>
+                <p>The Uploader must not knowingly submit Content in a manner that unlawfully infringes trademarks, trade names, logos, or other protected marks.</p>
+                <p>The presence of a trademark or logo in Content does not automatically transfer ownership of that trademark to Tasbir.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>11. PROHIBITED CONTENT</h2>
+                <p>The Uploader must not submit Content that infringes another person's copyright, contains stolen material, unlawfully copies another creator's work, contains illegal sexual material, sexually exploits or endangers minors, depicts or promotes child abuse, contains unlawful exploitation, contains prohibited graphic gore, depicts or promotes serious abuse of humans or animals, promotes terrorism or violent extremist activity, promotes criminal activity, contains unlawful threats, harassment, exposes private information, contains stolen personal information, impersonates another person, contains fraudulent material, intentionally deceives Users about its origin, contains malware, violates applicable law, violates Tasbir's Community Guidelines, manipulates rankings, is submitted primarily for spam, falsely claims work as the Uploader's own, or creates a significant legal, security, or safety risk.</p>
+                <p>Tasbir may remove or reject any Content that violates these rules.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>12. AI-GENERATED CONTENT</h2>
+                <p>Where Tasbir requires disclosure, the Uploader must disclose Content that has been substantially generated or materially altered using artificial intelligence.</p>
+                <p>The Uploader represents that they have the legal right to submit and transfer the applicable rights in AI-assisted or AI-generated Content.</p>
+                <p>The Uploader must not submit AI-generated Content that unlawfully reproduces another person's protected work, likeness, identity, trademark, or intellectual property.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>13. TASBIR'S RIGHTS TO ACCEPTED CONTENT</h2>
+                <p>After receiving Accepted Content, Tasbir may host, store, reproduce, modify, create derivatives, publish, sell, license, sublicense, distribute, include in subscriptions or paid collections, offer as free Content, use in marketing/advertising/promotional materials, provide to authorized customers or third-party platforms, and otherwise exploit the rights transferred under this Agreement.</p>
+                <p>Tasbir is not required to use, sell, license, or publish every item submitted.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>14. NO GUARANTEE OF PAYMENT</h2>
+                <p>Unless Tasbir expressly provides a compensation or revenue-sharing program, uploading Content does not create a guaranteed right to payment.</p>
+                <p>Where a compensation program exists, payment will be governed by the applicable Tasbir payment terms.</p>
+                <p>Tasbir does not guarantee a minimum number of downloads, sales, views, or a minimum amount of revenue.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>15. PRICING AND LICENSING CONTROL</h2>
+                <p>Tasbir may determine whether Content is free or paid, pricing, subscription availability, licensing categories, promotional discounts, bundles, collections, and other commercial terms.</p>
+                <p>The Uploader authorizes Tasbir to grant licenses to Users according to Tasbir's applicable licensing structure.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>16. USER RIGHTS</h2>
+                <p>Tasbir may grant Users licenses to download, use, reproduce, modify, publish, display, incorporate, or upload Content elsewhere, subject to the specific license applicable to that Content.</p>
+                <p>A User's license does not transfer copyright ownership to that User.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>17. NO REVOCATION OF VALIDLY GRANTED RIGHTS</h2>
+                <p>After Tasbir has received and accepted Content, the Uploader may not unilaterally revoke, withdraw, or cancel the rights assigned to Tasbir except where Tasbir agrees in writing, required by applicable law, the transfer is legally invalid, or another legally recognized basis applies.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>18. REMOVAL REQUESTS</h2>
+                <p>The Uploader may request removal of Content. Tasbir may decide whether removal is appropriate.</p>
+                <p>Removal of Content does not automatically terminate rights previously granted to Users, cancel completed sales, erase lawful copies, or revoke licenses already granted.</p>
+                <p>Tasbir may retain copies necessary for legal compliance, security, fraud prevention, dispute resolution, backups, audit purposes, and enforcement.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>19. PREVIOUSLY LICENSED CONTENT</h2>
+                <p>If Content has already been downloaded or licensed by a User, the Uploader acknowledges that Tasbir may have already granted rights to that User.</p>
+                <p>The Uploader agrees that removing Content from Tasbir does not automatically cancel rights that were validly granted before removal.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>20. COPYRIGHT COMPLAINTS</h2>
+                <p>If a third party claims that Content infringes their rights, Tasbir may remove the Content, restrict access, disable downloads, suspend licensing, request documentation, contact the Uploader, investigate the complaint, or take other reasonable action.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>21. UPLOADER'S INDEMNIFICATION</h2>
+                <p>To the maximum extent permitted by law, the Uploader agrees to indemnify and hold harmless Tasbir and its owners, directors, employees, contractors, affiliates, service providers, representatives, licensees, and partners from claims, losses, damages, liabilities, costs, and reasonable expenses arising from Content submitted, infringement claims, unauthorized Content, lack of permissions, privacy/publicity/trademark claims, unlawful Content, false representations, or breach of this Agreement.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>22. TASBIR'S LIMITATION OF LIABILITY</h2>
+                <p>To the maximum extent permitted by applicable law, Tasbir will not be liable for indirect, incidental, special, consequential, punitive, or exemplary damages arising from Content submission, removal, licensing, sales, User misuse, or Platform availability.</p>
+                <p>Nothing in this Agreement excludes liability that cannot legally be excluded.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>23. ACCOUNT SECURITY</h2>
+                <p>The Uploader is responsible for maintaining the security of their account.</p>
+                <p>The Uploader must not share credentials, permit unauthorized uploads, manipulate download statistics, create fraudulent accounts, abuse the Platform, or attempt to bypass Tasbir's security systems.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>24. SUSPENSION AND TERMINATION</h2>
+                <p>Tasbir may suspend or terminate an Uploader account for copyright infringement, repeated policy violations, fraud, illegal Content, abuse, manipulation, security violations, false ownership claims, or other material violations.</p>
+                <p>Termination does not automatically reverse copyright assignments already validly completed.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>25. EFFECT OF TERMINATION</h2>
+                <p>Termination of an account does not automatically transfer rights back to the Uploader, cancel existing User licenses, invalidate completed transactions, or require Tasbir to delete legally required records.</p>
+                <p>Rights that by their nature survive termination will remain effective.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>26. NO TRANSFER BACK BY DEFAULT</h2>
+                <p>Unless Tasbir expressly agrees otherwise in writing, copyright and transferable rights assigned to Tasbir under this Agreement do not automatically return to the Uploader because the Uploader closes their account, stops uploading, Content is removed, stops using Tasbir, or the account is terminated.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>27. CHANGES TO THIS AGREEMENT</h2>
+                <p>Tasbir may update this Agreement. Material changes may be communicated through the Platform or other reasonable means.</p>
+                <p>Changes will generally apply to future submissions unless otherwise required by law.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>28. GOVERNING LAW</h2>
+                <p>This Agreement shall be governed by applicable law of Nepal, subject to any mandatory legal rights that cannot lawfully be excluded or modified.</p>
+                <p>Disputes shall be handled by the appropriate courts or dispute-resolution mechanisms having lawful jurisdiction.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>29. ELECTRONIC ACCEPTANCE</h2>
+                <p>By selecting “I Agree,” uploading Content, or submitting Content to Tasbir, the Uploader confirms that they have read this Agreement, understand that Accepted Content is subject to copyright assignment, have authority to transfer rights, will not submit infringing Content, authorize Tasbir to exploit Accepted Content, and understand they cannot later claim exclusive ownership of assigned rights.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>30. CONTACT</h2>
+                <p><strong>Tasbir:</strong> Tasbir, operated by Zebrion Studios</p>
+                <p><strong>Website:</strong> Not currently available</p>
+                <p><strong>Legal Email:</strong> contact.tasbir@gmail.com</p>
+                <p><strong>Support Email:</strong> support.tasbir@gmail.com</p>
+                <p><strong>Business Address:</strong> Kathmandu, Nepal</p>
+                <p><strong>Last Updated:</strong> 27 August 2026</p>
+            </article>
+
+            <article class="terms-card" style="grid-column: 1 / -1;">
+                <h2>UPLOADER ACKNOWLEDGEMENT</h2>
+                <p>By uploading Content to Tasbir, I confirm that I have the legal authority to submit the Content and transfer the applicable copyright and transferable rights to Tasbir.</p>
+                <p>I understand that Tasbir may use, sell, license, sublicense, modify, distribute, and commercially exploit Accepted Content.</p>
+                <p>I understand that I cannot later claim exclusive ownership of rights that I have validly assigned to Tasbir.</p>
+                <p><strong>I agree to this Agreement.</strong></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tasbir. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

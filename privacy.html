@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Tasbir</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --card-bg: #121212;
+            --card-border: #1f1f1f;
+            --accent-yellow: #f5ab00;
+            --text-white: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 8%;
+            border-bottom: 1px solid var(--card-border);
+            background-color: var(--bg-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--accent-yellow);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--text-white);
+        }
+
+        .btn-yellow {
+            background-color: var(--accent-yellow);
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .btn-yellow:hover {
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 0 24px;
+        }
+
+        /* Back Button */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            transition: all 0.2s ease;
+        }
+
+        .btn-back:hover {
+            color: var(--accent-yellow);
+            border-color: var(--accent-yellow);
+        }
+
+        /* Page Title Header */
+        .hero {
+            margin-bottom: 48px;
+        }
+
+        .badge {
+            display: inline-block;
+            border: 1px solid var(--card-border);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--accent-yellow);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* Grid Layout for Policy Items */
+        .policy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .policy-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .policy-card:hover {
+            border-color: rgba(245, 171, 0, 0.4);
+        }
+
+        .policy-card h2 {
+            color: var(--accent-yellow);
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .policy-card p {
+            color: var(--text-white);
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+            padding: 24px;
+            border-top: 1px solid var(--card-border);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .policy-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Tasbir</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">App Showcase</a>
+            <a href="#">Support</a>
+            <a href="#">Contact</a>
+            <a href="#" class="btn-yellow">Get Tasbir</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Back Button -->
+        <a href="index.html" class="btn-back">
+            &#8592; Back to Home
+        </a>
+
+        <section class="hero">
+            <span class="badge">Legal & Privacy</span>
+            <h1>Privacy Policy</h1>
+            <p>Last Updated: 27 August 2026</p>
+        </section>
+
+        <section class="policy-grid">
+            <article class="policy-card">
+                <h2>1. Information We Collect</h2>
+                <p>We collect only the information reasonably needed to provide and improve Tasbir.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>2. Account Information</h2>
+                <p>We may collect your email address, name, and account-related information when you create an account.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>3. Passwords</h2>
+                <p>Your password is securely processed and is not intentionally stored in plain text.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>4. Uploaded Images</h2>
+                <p>Images you upload may be stored and processed to provide Tasbir's image features.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>5. Image Information</h2>
+                <p>We may process basic information such as file name, file type, file size, and image dimensions.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>6. Image Metadata</h2>
+                <p>Uploaded images may contain metadata such as EXIF information depending on how the file was created and processed.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>7. Public Images</h2>
+                <p>Images you make public may be viewed or downloaded by other Tasbir users.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>8. Image Visibility</h2>
+                <p>Uploaded images may be publicly available on Tasbir and accessible to other users.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>9. Download Activity</h2>
+                <p>We may record limited information about downloads to provide the feature and prevent abuse.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>10. Device Information</h2>
+                <p>We may collect information such as your device type, operating system, app version, and IP address.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>11. Technical Information</h2>
+                <p>Technical information may be collected to identify errors, improve performance, and maintain compatibility.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>12. Security Logs</h2>
+                <p>We may maintain security logs to detect suspicious activity and protect Tasbir.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>13. How We Use Information</h2>
+                <p>We use collected information to provide, maintain, secure, and improve Tasbir.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>14. Account Management</h2>
+                <p>Your information is used to create, authenticate, maintain, and manage your Tasbir account.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>15. Customer Support</h2>
+                <p>Information you provide to support may be used to respond to your questions and resolve issues.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>16. Subscriptions</h2>
+                <p>We may process subscription information to provide the features included in your selected plan.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>17. Payments</h2>
+                <p>Payments may be processed by authorized third-party payment providers or app stores.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>18. Payment Information</h2>
+                <p>Tasbir does not intentionally store complete payment card details when payments are handled by third-party providers.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>19. Third-Party Services</h2>
+                <p>Tasbir may use trusted third-party services for hosting, storage, payments, security, analytics, and other necessary functions.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>20. Information Sharing</h2>
+                <p>We only share information when reasonably necessary to operate Tasbir, provide services, protect users, or comply with the law.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>21. Selling Information</h2>
+                <p>Tasbir does not sell your personal information to third parties.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>22. Advertising</h2>
+                <p>If advertising services are introduced, this Privacy Policy will be updated to explain the related data practices.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>23. Analytics</h2>
+                <p>We may use limited analytics or technical monitoring to understand performance and improve Tasbir.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>24. Notifications</h2>
+                <p>Tasbir may send notifications about your account, security, subscriptions, and important service updates.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>25. Data Security</h2>
+                <p>We use reasonable technical and organizational measures to protect information from unauthorized access and misuse.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>26. Data Retention</h2>
+                <p>We retain information only for as long as reasonably necessary for the purposes described in this policy.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>27. Account Deletion</h2>
+                <p>You may request deletion of your Tasbir account and associated personal information.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>28. Image Deletion</h2>
+                <p>You may delete uploaded images through the features provided by Tasbir.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>29. Deleted Data</h2>
+                <p>Some deleted information may remain temporarily in backups or records where necessary for security or legal purposes.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>30. Children's Privacy</h2>
+                <p>Tasbir does not knowingly collect children's personal information where such collection is prohibited by law.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>31. Your Privacy Rights</h2>
+                <p>Depending on your location, you may have rights to access, correct, or request deletion of your personal information.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>32. Data Transfers</h2>
+                <p>Your information may be processed or stored in countries where Tasbir or its service providers operate.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>33. Legal Requests</h2>
+                <p>We may disclose information when required by applicable law or valid legal process.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>34. Account Security</h2>
+                <p>You are responsible for keeping your account credentials secure and confidential.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>35. User Responsibility</h2>
+                <p>You are responsible for ensuring that you have the necessary rights to upload and share images.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>36. Third-Party Links</h2>
+                <p>Tasbir may contain links or integrations to services that have their own privacy policies.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>37. Policy Changes</h2>
+                <p>We may update this Privacy Policy when our services, technology, or legal requirements change.</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>38. Contact Us</h2>
+                <p>For privacy questions or requests, contact us at [PRIVACY EMAIL].</p>
+            </article>
+
+            <article class="policy-card">
+                <h2>39. Effective Date</h2>
+                <p>This Privacy Policy is effective from 8 August 2026.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tasbir. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

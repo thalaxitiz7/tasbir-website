@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Tasbir</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --card-bg: #121212;
+            --card-border: #1f1f1f;
+            --accent-yellow: #f5ab00;
+            --text-white: #ffffff;
+            --text-muted: #a0a0a0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* Header Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 8%;
+            border-bottom: 1px solid var(--card-border);
+            background-color: var(--bg-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--accent-yellow);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--text-white);
+        }
+
+        .btn-yellow {
+            background-color: var(--accent-yellow);
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .btn-yellow:hover {
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 24px 0 24px;
+        }
+
+        /* Back Button */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            transition: all 0.2s ease;
+        }
+
+        .btn-back:hover {
+            color: var(--accent-yellow);
+            border-color: var(--accent-yellow);
+        }
+
+        /* Page Title Header */
+        .hero {
+            margin-bottom: 48px;
+        }
+
+        .badge {
+            display: inline-block;
+            border: 1px solid var(--card-border);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--accent-yellow);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .intro-box {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 32px;
+            color: var(--text-white);
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        /* Grid Layout for Policy Items */
+        .terms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+
+        .terms-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 24px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .terms-card:hover {
+            border-color: rgba(245, 171, 0, 0.4);
+        }
+
+        .terms-card h2 {
+            color: var(--accent-yellow);
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        .terms-card p {
+            color: var(--text-white);
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        .terms-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+            padding: 24px;
+            border-top: 1px solid var(--card-border);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .terms-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Tasbir</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">App Showcase</a>
+            <a href="#">Support</a>
+            <a href="#">Contact</a>
+            <a href="#" class="btn-yellow">Get Tasbir</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Back Button -->
+        <a href="index.html" class="btn-back">
+            &#8592; Back to Home
+        </a>
+
+        <section class="hero">
+            <span class="badge">Legal & Terms</span>
+            <h1>Terms and Conditions</h1>
+            <p>Last Updated: 27 August 2026</p>
+        </section>
+
+        <div class="intro-box">
+            <p>Welcome to Tasbir, a digital image library operated by Zebrion Studios. These Terms and Conditions ("Terms") govern your use of the Tasbir mobile application, website, image library, upload and download features, subscriptions, and related services (collectively, the "Service").</p>
+            <br>
+            <p>By creating an account, uploading content, downloading content, purchasing a subscription, or using Tasbir in any way, you confirm that you have read, understood, and agreed to these Terms. If you do not agree with these Terms, you must stop using Tasbir.</p>
+        </div>
+
+        <section class="terms-grid">
+            <article class="terms-card">
+                <h2>1. About Tasbir</h2>
+                <p>Tasbir provides a platform where users can discover, upload, store, view, and download digital images and other supported content.</p>
+                <p>Tasbir may provide both free and premium content, features, and subscription plans.</p>
+                <p>Tasbir may change or improve its features over time.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>2. Eligibility</h2>
+                <p>You must meet the minimum legal age required to use Tasbir in your jurisdiction.</p>
+                <p>If you are below the applicable age, you may use Tasbir only where permitted by applicable law and with appropriate parental or guardian involvement where required.</p>
+                <p>By using Tasbir, you confirm that you are legally permitted to accept these Terms.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>3. Creating an Account</h2>
+                <p>Some Tasbir features may require an account.</p>
+                <p>You must provide accurate information when creating your account.</p>
+                <p>You must not intentionally create an account using false information for the purpose of misleading Tasbir or other users.</p>
+                <p>You are responsible for keeping your login credentials secure.</p>
+                <p>You are responsible for activity performed through your account unless you have properly reported unauthorized access to Tasbir.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>4. Account Security</h2>
+                <p>You must not share your password or authentication credentials with other people.</p>
+                <p>You must notify Tasbir if you believe your account has been accessed without authorization.</p>
+                <p>You must not attempt to access another person's account or use another person's credentials.</p>
+                <p>Tasbir may temporarily restrict an account when necessary to protect the account, its owner, or the Service.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>5. Uploading Content</h2>
+                <p>Tasbir allows users to upload images and other supported content.</p>
+                <p>You are solely responsible for everything you upload to Tasbir.</p>
+                <p>Before uploading content, you must ensure that you have the necessary ownership, permission, license, consent, or other legal authority to upload and distribute it.</p>
+                <p>You must not upload content that you are legally prohibited from possessing, storing, distributing, or sharing.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>6. Rights You Grant to Tasbir</h2>
+                <p>By uploading content to Tasbir, you grant Tasbir and Zebrion Studios a worldwide, royalty-free, transferable, and sublicensable license to host, store, reproduce, process, modify as technically necessary, display, distribute, communicate, make available, and otherwise use that content as necessary to operate, maintain, promote, improve, and provide the Tasbir Service.</p>
+                <p>This license includes the right to create thumbnails, previews, compressed versions, resized versions, or other technical versions of uploaded content.</p>
+                <p>This license also allows Tasbir to make content available to users according to the visibility, access, subscription, and download features of the Service.</p>
+                <p>You understand that Tasbir cannot provide these features without receiving these rights.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>7. Your Rights and Ownership</h2>
+                <p>Uploading content to Tasbir does not by itself transfer your underlying copyright ownership to Tasbir unless a separate written agreement expressly states otherwise.</p>
+                <p>However, by uploading content, you give Tasbir the rights described in these Terms for operating and providing the Service.</p>
+                <p>You must not upload content and later knowingly make a false claim that Tasbir had no permission to use the content when your upload was made under these Terms.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>8. Public Content</h2>
+                <p>When you publish an image as public content, you understand that other users may be able to view or download it.</p>
+                <p>Public content may be distributed through Tasbir's available features.</p>
+                <p>You should not upload confidential or sensitive information as public content.</p>
+                <p>Once another person has lawfully downloaded an image, Tasbir cannot guarantee that every independently created copy can be removed from outside Tasbir.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>9. Downloaded Images</h2>
+                <p>Tasbir may allow users to download available images for personal, creative, commercial, or other lawful purposes, subject to the applicable license and any restrictions displayed with the content.</p>
+                <p>Downloading an image gives you permission to use it according to the applicable license; it does not automatically transfer copyright ownership to you.</p>
+                <p>You may not falsely claim a downloaded image as your own original creation or represent yourself as its copyright owner when you are not.</p>
+                <p>Knowingly making a false ownership claim may result in account restrictions, content removal, termination, or further action where appropriate.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>10. Copyright and Intellectual Property</h2>
+                <p>You must respect copyright, trademarks, privacy rights, publicity rights, and other intellectual-property rights.</p>
+                <p>You must not upload copyrighted content belonging to another person, creator, company, website, social-media platform, or organization unless you have the necessary rights or permission.</p>
+                <p>You must not copy and upload content from another service simply because it is publicly visible online.</p>
+                <p>Public availability does not automatically mean that content is free to redistribute.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>11. False Ownership and Copyright Claims</h2>
+                <p>You must not falsely claim that you created, own, or exclusively control content that belongs to someone else.</p>
+                <p>You must not knowingly submit a false copyright complaint against content that you had previously uploaded or authorized Tasbir to distribute.</p>
+                <p>You must not use copyright complaints or ownership claims to harass users, remove legitimate content, or obtain an unfair advantage.</p>
+                <p>False, fraudulent, or abusive claims may result in account suspension, termination, content restrictions, and further legal action where appropriate.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>12. Copyright Complaints</h2>
+                <p>If you believe content available through Tasbir infringes your copyright or other legal rights, contact us at: support.tasbir@gmail.com</p>
+                <p>Your complaint should provide enough information for Tasbir to identify the content and understand the basis of your claim.</p>
+                <p>Tasbir may investigate legitimate complaints and may remove, restrict, or disable access to content where appropriate.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>13. Prohibited Adult and Sexual Content</h2>
+                <p>Tasbir does not permit pornography, sexually explicit material, or obscene content where prohibited by our policies or applicable law.</p>
+                <p>Content involving sexual exploitation, abuse, or sexualization of minors is strictly prohibited.</p>
+                <p>Tasbir may immediately remove prohibited content and take strict action against accounts responsible for uploading or distributing it.</p>
+                <p>Where legally required or appropriate, serious violations may be reported to law-enforcement or other competent authorities.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>14. Graphic Violence and Gore</h2>
+                <p>Tasbir does not permit content depicting extreme or gratuitous graphic violence or gore.</p>
+                <p>Content showing severe injury, mutilation, torture, or disturbing real-world violence may be removed or restricted.</p>
+                <p>Tasbir may take strict action against accounts that intentionally upload prohibited violent or graphic material.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>15. Animal Abuse</h2>
+                <p>Content depicting the intentional abuse, torture, mutilation, or cruel treatment of animals is prohibited.</p>
+                <p>Content created to glorify or encourage animal cruelty may also be removed.</p>
+                <p>Serious or unlawful animal-abuse content may be reported to appropriate authorities where required or appropriate.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>16. Illegal or Harmful Content</h2>
+                <p>You must not use Tasbir to upload, distribute, store, or promote content that violates applicable law.</p>
+                <p>This includes content that facilitates fraud, criminal activity, exploitation, violence, harassment, or other unlawful conduct.</p>
+                <p>Tasbir may remove such content and take appropriate action against the responsible account.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>17. Confidential and Sensitive Information</h2>
+                <p>You must not upload images containing another person's confidential or highly sensitive information without proper authorization.</p>
+                <p>This includes ATM cards, credit cards, bank information, passwords, authentication codes, identity documents, private records, and similar sensitive information.</p>
+                <p>If you have a legitimate reason to upload an image containing sensitive information, you must permanently remove, blur, cover, or redact the sensitive information before uploading it.</p>
+                <p>Sensitive information should be removed from the original file where possible rather than merely covered by a temporary visual layer.</p>
+                <p>Tasbir may remove content containing exposed sensitive information to protect individuals and prevent misuse.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>18. Personal Information of Others</h2>
+                <p>You must respect the privacy of other people.</p>
+                <p>You must not upload or distribute private personal information, confidential documents, or identifying information belonging to another person without appropriate authorization or legal basis.</p>
+                <p>Tasbir may remove content that creates a significant privacy or safety risk.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>19. Malware and Dangerous Files</h2>
+                <p>You must not upload viruses, malware, malicious code, corrupted files designed to cause damage, or other harmful technology.</p>
+                <p>Tasbir may scan, restrict, remove, or block files that present security risks.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>20. Platform Abuse</h2>
+                <p>You must not interfere with the operation or security of Tasbir.</p>
+                <p>You must not attempt to overload servers, disrupt services, bypass security controls, exploit vulnerabilities, or intentionally damage Tasbir.</p>
+                <p>You must not use Tasbir to conduct attacks against Tasbir, its users, or third-party systems.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>21. Unauthorized Access</h2>
+                <p>You must not attempt to access restricted accounts, private images, administrative systems, databases, APIs, storage systems, or other resources without authorization.</p>
+                <p>You must not attempt to obtain credentials, authentication tokens, session information, or other security information belonging to another user.</p>
+                <p>Unauthorized access attempts may result in immediate account termination and further action where appropriate.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>22. Scraping and Automated Downloads</h2>
+                <p>You must not use bots, scripts, crawlers, automated downloaders, scraping systems, or similar tools to collect or download Tasbir content at a scale that abuses or interferes with the Service.</p>
+                <p>Tasbir may block automated activity that violates these Terms or creates unreasonable technical load.</p>
+                <p>Authorized APIs or other explicitly permitted automated access may be used according to their applicable rules.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>23. Circumventing Restrictions</h2>
+                <p>You must not attempt to bypass subscription requirements, access controls, download restrictions, rate limits, content restrictions, authentication systems, or other technical limitations.</p>
+                <p>You must not attempt to obtain premium content or restricted functionality without the required authorization or payment.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>24. Account Sharing and Misuse</h2>
+                <p>You must not sell, rent, transfer, or commercially share your Tasbir account unless Tasbir expressly provides such functionality.</p>
+                <p>Subscription benefits are intended for the account associated with the applicable subscription.</p>
+                <p>Tasbir may restrict accounts involved in unauthorized account sharing or subscription abuse.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>25. Subscriptions</h2>
+                <p>Tasbir may offer free and paid subscription plans.</p>
+                <p>Each plan may have different features, content access, limits, prices, and durations.</p>
+                <p>Subscription benefits apply only while the relevant subscription or purchase remains valid.</p>
+                <p>Tasbir may change, add, or remove subscription features over time.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>26. Payments</h2>
+                <p>Payments may be processed by third-party payment providers or app stores.</p>
+                <p>Tasbir may receive transaction and subscription information necessary to confirm and manage your purchase.</p>
+                <p>Payment providers may apply their own terms, conditions, refund rules, and privacy policies.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>27. Subscription Renewal and Cancellation</h2>
+                <p>Where automatic renewal applies, your subscription may renew according to the terms shown at the time of purchase.</p>
+                <p>You are responsible for cancelling a subscription before the next renewal period if you do not want it to renew.</p>
+                <p>Cancellation may stop future charges but does not necessarily create a refund for a completed billing period.</p>
+                <p>Refunds are handled according to the applicable payment platform's policies and applicable law.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>28. Premium Content</h2>
+                <p>Premium content may require an active subscription or separate purchase.</p>
+                <p>Access to premium content may end when your subscription expires, is cancelled, refunded, or terminated.</p>
+                <p>Purchasing access does not automatically transfer ownership or copyright of premium content to you.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>29. Content Availability</h2>
+                <p>Tasbir does not guarantee that any particular image or content will remain available permanently.</p>
+                <p>Content may be removed, replaced, restricted, or modified because of copyright concerns, legal requirements, security issues, quality control, licensing issues, or operational reasons.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>30. Content Moderation</h2>
+                <p>Tasbir may use automated systems, reports, manual review, or other methods to identify content that may violate these Terms or applicable law.</p>
+                <p>Tasbir is not required to publish or retain every piece of uploaded content.</p>
+                <p>We may restrict or remove content when reasonably necessary to protect users, the Service, or third parties.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>31. Account Suspension</h2>
+                <p>Tasbir may temporarily suspend an account while investigating suspected violations, fraud, security incidents, unauthorized access, or other serious concerns.</p>
+                <p>Where immediate action is necessary to protect the Service or users, suspension may occur without prior notice.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>32. Account Termination</h2>
+                <p>Tasbir may permanently terminate an account if the user seriously or repeatedly violates these Terms.</p>
+                <p>Termination may also occur when an account presents a significant security, legal, financial, or operational risk.</p>
+                <p>Serious violations may include copyright abuse, illegal content, malicious activity, unauthorized access, fraud, or repeated attempts to bypass Service restrictions.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>33. Strict Enforcement and Legal Action</h2>
+                <p>Tasbir takes serious violations of these Terms seriously.</p>
+                <p>Where appropriate, Tasbir may preserve relevant information, investigate activity, restrict accounts, remove content, cooperate with lawful investigations, and pursue available legal remedies.</p>
+                <p>Serious unlawful activity may be reported to law-enforcement authorities or other competent authorities where required or appropriate.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>34. No Guarantee of Service Availability</h2>
+                <p>Tasbir aims to provide a reliable service but does not guarantee uninterrupted or error-free operation.</p>
+                <p>The Service may temporarily become unavailable because of maintenance, technical failures, security incidents, infrastructure problems, third-party failures, or circumstances beyond our reasonable control.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>35. Service Changes</h2>
+                <p>Tasbir may add, modify, suspend, or discontinue features when necessary.</p>
+                <p>We may also change how features operate to improve security, performance, reliability, legal compliance, or the user experience.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>36. Third-Party Services</h2>
+                <p>Tasbir may rely on third-party services for hosting, storage, payments, authentication, security, analytics, communications, or other functions.</p>
+                <p>Third-party services may have their own terms and privacy policies.</p>
+                <p>Tasbir is not responsible for services that it does not control.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>37. Privacy</h2>
+                <p>Your use of Tasbir is also governed by the Tasbir Privacy Policy.</p>
+                <p>The Privacy Policy explains how Tasbir collects, uses, stores, and protects personal information.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>38. User Responsibility</h2>
+                <p>You are responsible for your use of Tasbir and for ensuring that your activities and uploaded content comply with these Terms and applicable law.</p>
+                <p>You are also responsible for obtaining any permissions, licenses, releases, or consents required for the content you upload.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>39. Indemnification</h2>
+                <p>To the extent permitted by applicable law, you agree to be responsible for claims, losses, damages, liabilities, and reasonable expenses arising from your violation of these Terms, unlawful use of Tasbir, or infringement of another person's rights through your activity or content.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>40. Limitation of Liability</h2>
+                <p>To the maximum extent permitted by applicable law, Tasbir and Zebrion Studios will not be responsible for indirect, incidental, special, consequential, or unforeseeable losses arising from your use of the Service.</p>
+                <p>Nothing in these Terms excludes or limits liability that cannot legally be excluded or limited.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>41. Disclaimer</h2>
+                <p>Tasbir is provided on an "as available" basis to the extent permitted by applicable law.</p>
+                <p>We do not guarantee that every image is suitable for every purpose or that every piece of content is free from third-party rights or restrictions.</p>
+                <p>Users should review the applicable license and determine whether their intended use is permitted before using downloaded content.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>42. Intellectual Property of Tasbir</h2>
+                <p>The Tasbir name, logo, application design, branding, software, original graphics, website, and other Tasbir-owned materials are protected by applicable intellectual-property laws.</p>
+                <p>You may not copy, reproduce, modify, sell, distribute, or commercially exploit Tasbir-owned materials without appropriate authorization.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>43. Feedback</h2>
+                <p>If you provide suggestions, ideas, or feedback about Tasbir, you allow us to use that feedback to improve the Service without creating an obligation to compensate you, to the extent permitted by applicable law.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>44. Changes to These Terms</h2>
+                <p>We may update these Terms when our Service, technology, business practices, or legal requirements change.</p>
+                <p>The updated version will display a new "Last Updated" date.</p>
+                <p>Where required, we may provide additional notice of significant changes.</p>
+                <p>Your continued use of Tasbir after the updated Terms become effective means you accept the updated Terms to the extent permitted by applicable law.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>45. Governing Law</h2>
+                <p>These Terms will be interpreted according to applicable law.</p>
+                <p>To the extent legally permitted, disputes relating to Tasbir will be subject to the appropriate courts and legal authorities in Nepal.</p>
+                <p>Nothing in this section removes any mandatory legal rights you may have under the laws applicable to you.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>46. Severability</h2>
+                <p>If any part of these Terms is found to be invalid or unenforceable, the remaining provisions will continue to apply to the extent permitted by law.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>47. Entire Agreement</h2>
+                <p>These Terms, together with the Tasbir Privacy Policy and any additional terms presented for specific features or services, form the agreement governing your use of Tasbir.</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>48. Contact Us</h2>
+                <p>For support, copyright complaints, privacy concerns, legal notices, or questions regarding these Terms, contact:</p>
+                <p><strong>Tasbir</strong><br>Email: support.tasbir@gmail.com</p>
+            </article>
+
+            <article class="terms-card">
+                <h2>49. Acceptance</h2>
+                <p>By creating an account, uploading content, downloading content, purchasing a subscription, or otherwise using Tasbir, you confirm that you have read, understood, and agreed to these Terms and Conditions.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tasbir. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
